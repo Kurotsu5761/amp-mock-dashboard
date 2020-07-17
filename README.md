@@ -2,6 +2,6 @@
 
 A dashboard mock up for Association Membership Platform using CoreUI React (Admin Template)
 
-Link: [https://amp-dashboard-mock.azurewebsites.net](Dashboard)
+Link: [Dashboard](https://amp-dashboard-mock.azurewebsites.net)
 
-Credit: [https://coreui.io/react/](CoreUI React)
+Credit: [CoreUI React](https://coreui.io/react/)
