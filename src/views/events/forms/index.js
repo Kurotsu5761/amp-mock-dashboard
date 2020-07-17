@@ -9,15 +9,24 @@ import {
   CButton,
   CLabel,
   CInput,
+  CSelect,
   CForm,
 } from "@coreui/react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import CIcon from "@coreui/icons-react";
+import ReactPlayer from "react-player";
 import { EventListData } from "../../../mock";
+import Attachments from "./attachments";
 
 const EventForm = ({ match }) => {
   const [value, setValue] = useState("");
+  const [cover, setCover] = useState("image");
+  const [videoUrl, setVideoUrl] = useState(
+    "    https://www.youtube.com/watch?v=OCWj5xgu5Ng"
+  );
+  const [attachments, setAttachments] = useState([]);
+
   let quillRef = useRef();
 
   const event = EventListData.data.find(
@@ -38,13 +47,25 @@ const EventForm = ({ match }) => {
               <CCardHeader>创作活动</CCardHeader>
               <CCardBody>
                 <CRow>
-                  <CCol xs="12">
+                  <CCol xs="11">
                     <CLabel htmlFor="title">标题</CLabel>
                     <CInput
                       id="title"
                       name="title"
                       defaultValue={event?.title}
                     />
+                  </CCol>
+                  <CCol xs="1">
+                    <CLabel htmlFor="public">隐私</CLabel>
+                    <CSelect
+                      custom
+                      name="public"
+                      id="public"
+                      defaultValue={event?.public ? "public" : "member"}
+                    >
+                      <option value="public">公开</option>
+                      <option value="member">会员</option>
+                    </CSelect>
                   </CCol>
                 </CRow>
                 <CRow className="mt-4">
@@ -100,6 +121,12 @@ const EventForm = ({ match }) => {
                     >
                       设定活动图
                     </CButton>
+                  </CCol>
+                  <CCol xs="8">
+                    <Attachments
+                      attachments={attachments}
+                      setAttachments={setAttachments}
+                    />
                   </CCol>
                 </CRow>
                 <CRow className="mt-4" style={{ height: 500 }}>

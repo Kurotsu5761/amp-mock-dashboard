@@ -150,66 +150,77 @@ export const ArticleListData = {
       title: "十大巴生福建炒面",
       creationDate: "30-6-2020",
       published: false,
+      public: true,
     },
     {
       _id: 1,
       title: "你知道你的家在哪里吗？",
       creationDate: "28-6-2020",
       published: true,
+      public: false,
     },
     {
       _id: 2,
       title: "舞狮团的由来",
       creationDate: "12-6-2020",
       published: true,
+      public: true,
     },
     {
       _id: 3,
       title: "在很久很久以前，有个...",
       creationDate: "10-6-2020",
       published: false,
+      public: false,
     },
     {
       _id: 4,
       title: "雪花飘飘的季节",
       creationDate: "30-5-2020",
       published: true,
+      public: false,
     },
     {
       _id: 5,
       title: "风雨交加",
       creationDate: "22-4-2020",
       published: true,
+      public: true,
     },
     {
       _id: 6,
       title: "新版本书画艺术",
       creationDate: "15-3-2020",
       published: true,
+      public: true,
     },
     {
       _id: 7,
       title: "水墨画的由来",
       creationDate: "12-12-2019",
       published: true,
+      public: true,
     },
     {
       _id: 8,
       title: "福建到底在哪里",
       creationDate: "11-11-2019",
       published: true,
+      public: false,
     },
     {
       _id: 9,
       title: "你知道你的姓代表什么？",
       creationDate: "12-9-2019",
       published: true,
+      public: false,
     },
   ],
   fields: [
     { key: "title", label: "文章标题" },
     { key: "creationDate", label: "创作日期" },
     { key: "status", label: "状态" },
+    { key: "public", label: "隐私" },
     { key: "actions", label: "" },
   ],
 };
@@ -227,6 +238,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: false,
+      public: false,
     },
     {
       _id: 1,
@@ -239,6 +251,7 @@ export const EventListData = {
       detail: "",
       creationDate: "28/6/2020",
       published: true,
+      public: true,
     },
     {
       _id: 2,
@@ -251,6 +264,7 @@ export const EventListData = {
       detail: "",
       creationDate: "12/6/2020",
       published: true,
+      public: false,
     },
     {
       _id: 3,
@@ -263,6 +277,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: true,
+      public: true,
     },
     {
       _id: 4,
@@ -275,6 +290,7 @@ export const EventListData = {
       detail: "",
       creationDate: "10/5/2020",
       published: false,
+      public: true,
     },
     {
       _id: 5,
@@ -287,6 +303,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/5/2020",
       published: true,
+      public: false,
     },
     {
       _id: 6,
@@ -299,6 +316,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: true,
+      public: false,
     },
     {
       _id: 7,
@@ -311,6 +329,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: true,
+      public: true,
     },
     {
       _id: 8,
@@ -323,6 +342,7 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: true,
+      public: false,
     },
     {
       _id: 9,
@@ -335,12 +355,14 @@ export const EventListData = {
       detail: "",
       creationDate: "30/6/2020",
       published: true,
+      public: true,
     },
   ],
   fields: [
     { key: "title", label: "活动名称" },
     { key: "creationDate", label: "创作日期" },
     { key: "status", label: "状态" },
+    { key: "public", label: "隐私" },
     { key: "actions", label: "" },
   ],
 };

@@ -67,8 +67,8 @@ const UserForm = ({ user }) => {
                         id="gender"
                         defaultValue={user.gender}
                       >
-                        <option defaultValue="male">男性</option>
-                        <option defaultValue="female">女性</option>
+                        <option value="male">男性</option>
+                        <option value="female">女性</option>
                       </CSelect>
                     </CCol>
                     <CCol xs="12" sm="6">
@@ -89,8 +89,8 @@ const UserForm = ({ user }) => {
                         id="status"
                         defaultValue={user.status}
                       >
-                        <option defaultValue="普通会员">普通会员</option>
-                        <option defaultValue="认证会员">认证会员</option>
+                        <option value="普通会员">普通会员</option>
+                        <option value="认证会员">认证会员</option>
                       </CSelect>
                     </CCol>
                   </CRow>

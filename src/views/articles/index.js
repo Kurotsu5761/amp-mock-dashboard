@@ -81,6 +81,7 @@ const Articles = ({
                       </CBadge>
                     </td>
                   ),
+                  public: (item) => <td>{item.public ? "公开" : "会员"}</td>,
                 }}
               />
             </CCardBody>

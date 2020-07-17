@@ -81,6 +81,13 @@ const Articles = ({
                       </CBadge>
                     </td>
                   ),
+                  public: (item) => (
+                    <td>
+                      <CBadge color={getBadge(item.public)}>
+                        {item.public ? "公开" : "会员"}
+                      </CBadge>
+                    </td>
+                  ),
                 }}
               />
             </CCardBody>
